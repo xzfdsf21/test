@@ -16,7 +16,6 @@ if ($response.body) {
       body.data.vip_id = 10;
       body.data.is_set_pay_pass = 1;  
       body.data.is_set_pass = 1;  
-      body.data.is_sub_unset = 1;  
     }
 
     $done({ body: JSON.stringify(body) });
