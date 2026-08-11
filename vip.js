@@ -13,7 +13,7 @@ if ($response.body) {
       body.data.vip_end_time = "2030-11-04 08:55";
       body.data.is_vip = "1";       // 原字段是字符串，保持字符串格式
       body.data.vip_name = "haha";
-      body.data.vip_id = 1;
+      body.data.vip_id = 4359;
       body.data.is_set_pay_pass = 1;   
     }
 
