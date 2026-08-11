@@ -10,10 +10,10 @@ if ($response.body) {
     let body = JSON.parse($response.body);
 
     if (body.data) {
-      body.data.vip_end_time = "2027-8-04 08:55";
+      body.data.vip_end_time = "2027-08-04 08:55";
       body.data.is_vip = "1";       // 原字段是字符串，保持字符串格式
       body.data.vip_name = "haha";
-      body.data.vip_id = 4359;
+      body.data.vip_id = 1;
     }
 
     $done({ body: JSON.stringify(body) });
