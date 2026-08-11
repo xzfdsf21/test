@@ -14,6 +14,7 @@ if ($response.body) {
       body.data.is_vip = "1";       // 原字段是字符串，保持字符串格式
       body.data.vip_name = "haha";
       body.data.vip_id = 10;
+      body.data.is_set_pay_pass = 1;  
     }
 
     $done({ body: JSON.stringify(body) });
