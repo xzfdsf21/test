@@ -14,7 +14,7 @@ if ($response.body) {
       body.data.is_vip = "1";       // 原字段是字符串，保持字符串格式
       body.data.vip_name = "夏峥";
       body.data.vip_id = 4359;
-      body.data.is_sub_unset = 1;
+      body.data.is_sub_unset = 2;
     }
 
     $done({ body: JSON.stringify(body) });
