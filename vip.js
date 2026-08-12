@@ -11,13 +11,16 @@ if ($response.body) {
 
     if (body.data) {
       body.data.is_sub_unset = 2;
-      body.data.vip_end_time = "2027-09-04 09:52";
+      body.data.vip_end_time = "2027-09-04 09:53";
       body.data.is_vip = "1";       // 原字段是字符串，保持字符串格式
       body.data.vip_name = "夏峥";
       body.data.vip_id = 4359;
- 
+       
+      
     }
-
+    if (body.data && body.data.hasOwnProperty("is_free")) {
+      body.data.is_free = 1;
+    }
     $done({ body: JSON.stringify(body) });
   } catch (e) {
     console.log("JSON解析失败: " + e);
